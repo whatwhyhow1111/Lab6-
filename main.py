@@ -1,4 +1,3 @@
-
 def encode_password(password):
     encode = ""
     for char in password:
@@ -20,12 +19,9 @@ def main():
             password = input("Please enter your password to encode: ")
             encode = encode_password(password)
             print("Your password has been encoded and stored!")
-            print()
         if option == 2:
             decode = decode_password(encode)
             print("The encoded password is", encode, ", the original password is ", decode)
-            print()
-
 
 if __name__ == "__main__":
     main()
